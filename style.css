@@ -14,7 +14,7 @@
   --white: #ffffff;
   --medium-grey: #a3a3a3;
   --red: #f51c1c;
-  --default-padding: 2rem 6.25rem;
+  --default-padding: 3rem 6.25rem;
 }
 
 header {
@@ -162,7 +162,7 @@ footer {
   background-color: var(--background-color);
   color: var(--white);
   display: flex;
-  height: 8.75rem;
+  height: max-content;
   justify-content: space-between;
   padding: var(--default-padding);
 
