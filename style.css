@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #040305;
+  --black: #000000;
+  --dark-grey: #2c2c2c;
+  --white: #ffffff;
+  --medium-grey: #a3a3a3;
+  --red: #f51c1c;
+  --default-padding: 2rem 6.25rem;
+}
+
+header {
+  background: url("./assets/wallpaper.png") no-repeat;
+  background-size: cover;
+  height: auto;
+  min-height: calc(100vh + 200px);
+  padding: var(--default-padding);
+  position: relative;
+  width: 100%;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      list-style: none;
+
+      li {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        width: 6.25rem;
+
+        a {
+          color: var(--white);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: calc(100vh - 50%);
+    width: 30%;
+
+    h1 {
+      color: var(--white);
+      font-size: 4rem;
+      text-transform: uppercase;
+
+      span {
+        color: var(--red);
+      }
+    }
+
+    p {
+      color: var(--white);
+    }
+  }
+}
+
+main {
+  background-color: var(--background-color);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: var(--default-padding);
+
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ul {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      list-style: none;
+      width: max-content;
+
+      h4 {
+        align-items: center;
+        color: var(--medium-grey);
+        display: flex;
+        gap: 1rem;
+        font-weight: 400;
+
+        ion-icon {
+          color: var(--red);
+          font-size: 1rem;
+        }
+      }
+
+      li {
+        color: var(--white);
+      }
+    }
+
+    aside {
+      background-color: var(--medium-grey);
+
+      img {
+        background-size: cover;
+        height: 21.875rem;
+        width: 15rem;
+      }
+    }
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    .main-content {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h4 {
+        color: var(--white);
+      }
+
+      .cards-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(5, 1fr);
+
+        .card {
+          height: 21.875rem;
+          width: 15rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--white);
+  display: flex;
+  height: 8.75rem;
+  justify-content: space-between;
+  padding: var(--default-padding);
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+
+    li a {
+      color: var(--white);
+      text-decoration: none;
+    }
+  }
+
+  .red {
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 0.625rem;
+      list-style: none;
+    }
+  }
+
+  .line-red {
+    background-color: var(--red);
+    height: 8.75rem;
+    width: 0.125rem;
+  }
+
+  .download-infos {
+    display: flex;
+    gap: 2rem;
+
+    .rectangle {
+      align-items: center;
+      background-color: var(--dark-grey);
+      display: flex;
+      height: 7rem;
+      justify-content: center;
+      width: 7rem;
+    }
+
+    .download-images {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .download-images-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  header {
+    .text-container {
+      top: calc(100vh - 30%);
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  main {
+    .main-container .main-content {
+      .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
