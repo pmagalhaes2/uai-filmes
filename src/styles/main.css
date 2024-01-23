@@ -1,37 +1,10 @@
+@import url('./default.css');
+
 header {
-  background: url("./assets/wallpaper.png") no-repeat;
+  background: url("../assets/wallpaper.png") no-repeat;
   background-color: var(--background-color);
   background-size: cover;
-  height: auto;
   min-height: calc(100vh + 200px);
-  padding: var(--default-padding);
-  position: relative;
-  width: 100%;
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    ul {
-      display: flex;
-      gap: 1rem;
-      justify-content: flex-end;
-      list-style: none;
-
-      li {
-        font-size: 1.25rem;
-        font-weight: 600;
-        text-align: center;
-        width: 6.25rem;
-
-        a {
-          color: var(--white);
-          text-decoration: none;
-        }
-      }
-    }
-  }
 
   .text-container {
     display: flex;

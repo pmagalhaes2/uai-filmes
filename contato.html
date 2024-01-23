@@ -3,19 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="default.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <title>UAIFilmes | Contato</title>
+    <link rel="stylesheet" href="./src/styles/contato.css" />
   </head>
   <body>
-    <p>Página de contato</p>
+    <header>
+      <nav>
+        <img
+          src="./src/assets/logo.png"
+          alt="Logo UaiFilmes em branco e vermelho"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+      <h1>Fale com a gente</h1>
+    </header>
+    <main>
+      <div class="contact-container">
+        <div class="text-container">
+          <h2>Estamos aqui para ajudar!</h2>
+          <p>
+            Contate-nos para dúvidas, informações ou um simples oi. Estamos aqui
+            para ajudar. Use o formulário ou escolha outra opção de contato.
+          </p>
+        </div>
+        <div class="text-container">
+          <h2>Localização</h2>
+          <p>
+            Rua XYZ, 678 - 714 - Gonzaga, São Paulo - SP, 28293-111, Brasil.
+          </p>
+        </div>
+        <div class="text-container">
+          <h2>Nossas Redes</h2>
+          <nav>
+            <ul>
+              <li>
+                <img src="./src/assets/instagram.svg" alt="Logo do Instagram" />
+              </li>
+              <li>
+                <img src="./src/assets/facebook.svg" alt="Logo do Facebook" />
+              </li>
+              <li>
+                <img src="./src/assets/twitter.svg" alt="Logo do Twitter" />
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="form-container">
+        <form>
+          <h2>Formulário de Contato</h2>
+          <input type="text" placeholder="Nome completo" required />
+          <input type="email" placeholder="E-mail" required />
+          <textarea placeholder="Mensagem" rows="6" required></textarea>
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </main>
     <footer>
-      <img src="./assets/logo.png" alt="Logo UaiFilmes em branco e vermelho" />
+      <img
+        src="./src/assets/logo.png"
+        alt="Logo UaiFilmes em branco e vermelho"
+      />
       <nav>
         <ul>
-          <li><a href="#" class="red">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="./index.html" class="red">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </nav>
       <div class="social-media">
@@ -23,10 +79,14 @@
         <nav>
           <ul>
             <li>
-              <img src="./assets/instagram.svg" alt="Logo do Instagram" />
+              <img src="./src/assets/instagram.svg" alt="Logo do Instagram" />
             </li>
-            <li><img src="./assets/facebook.svg" alt="Logo do Facebook" /></li>
-            <li><img src="./assets/twitter.svg" alt="Logo do Twitter" /></li>
+            <li>
+              <img src="./src/assets/facebook.svg" alt="Logo do Facebook" />
+            </li>
+            <li>
+              <img src="./src/assets/twitter.svg" alt="Logo do Twitter" />
+            </li>
           </ul>
         </nav>
       </div>
@@ -38,8 +98,11 @@
         <div class="download-images">
           <h3>Faça download do nosso App</h3>
           <div class="download-images-container">
-            <img src="./assets/googleplay.png" alt="Imagem do Google Play" />
-            <img src="./assets/apple.png" alt="Imagem do Apple Store" />
+            <img
+              src="./src/assets/googleplay.png"
+              alt="Imagem do Google Play"
+            />
+            <img src="./src/assets/apple.png" alt="Imagem do Apple Store" />
           </div>
         </div>
       </div>
